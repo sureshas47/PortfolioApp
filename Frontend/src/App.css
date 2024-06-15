@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,81 @@
 
 .read-the-docs {
   color: #888;
+} */
+.navbar {
+  background-color: #246bf7;
+}
+
+.footer {
+  background-color: #0d1117;
+  color: white;
+  padding: 40px 0;
+}
+.footer a {
+  color: #adb5bd;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+.footer .subscribe input {
+  margin-bottom: 10px;
+}
+.footer .subscribe button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+.footer .social-icons a {
+  font-size: 1.5rem;
+  /* margin-right: 15px; */
+  color: white;
+}
+.footer-link {
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+/* hero section */
+.hero-section {
+  background-color: #246bf7;
+  color: white;
+  padding: 60px 0;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+  color: #ffc107;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-section .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-image {
+  /* border-radius: 50%; */
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
 }
