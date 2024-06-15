@@ -21,7 +21,7 @@ const Hero = () => {
           </Col>
           <Col lg={6} md={12}>
             <Image
-              src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="https://images.pexels.com/photos/414860/pexels-photo-414860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="Hero Image"
               className="hero-image rounded-3 shadow-lg p-3 bg-primary rounded mt-3 mt-lg-0"
             />

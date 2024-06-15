@@ -13,14 +13,12 @@ const Footer = () => {
         <Row>
           <Col lg={2} md={6} className="mb-4 mb-md-0">
             <h5 className="text-uppercase">Connect with Me</h5>
-            <ul className="list-unstyled d-flex justify-content-center">
-              <li>
-                <a href="#!" className="footer-link">
+            <ul className="list-unstyled d-flex justify-content-center justify-content-md-start">
+              <li className="d-flex ">
+                <a href="" className="footer-link">
                   <FaLinkedin size={24} />
                 </a>
-              </li>
-              <li className="mx-2">
-                <a href="#!" className="footer-link">
+                <a href="" className="footer-link mx-3">
                   <FaGithub size={24} />
                 </a>
               </li>
