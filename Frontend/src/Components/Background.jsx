@@ -6,14 +6,15 @@ const StyledText = styled.div`
   p {
     font-size: 22px; /* Adjust the font size as needed */
     margin-bottom: 15px; /* Adjust the margin as needed */
-    line-height: 1.8;
+
     font-weight: 200;
     color: #cacaca;
-    padding: 0 60px;
+    padding: 0 50px;
   }
   h1 {
     font-size: 26px;
     text-transform: uppercase;
+    /* text-align: right; */
   }
   span {
     color: #ffffff;
@@ -25,12 +26,12 @@ const MyComponent = () => {
   return (
     <Container>
       <Row>
-        <Col md={2}>
+        <Col md={3}>
           <StyledText>
             <h1 className="text-warning">Background</h1>
           </StyledText>
         </Col>
-        <Col md={10}>
+        <Col md={9}>
           <StyledText>
             <p>
               I am currently <span>learning DevOps</span> to enhance my
