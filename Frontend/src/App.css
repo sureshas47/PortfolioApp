@@ -40,12 +40,22 @@
 .read-the-docs {
   color: #888;
 } */
-.navbar {
-  background-color: #246bf7;
+
+body {
+  background-color: #171d29;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
 }
 
 .footer {
-  background-color: #0d1117;
+  background-color: #171d29;
   color: white;
   padding: 40px 0;
 }
@@ -77,24 +87,17 @@
 
 /* hero section */
 .hero-section {
-  background-color: #246bf7;
   color: white;
-  padding: 60px 0;
-}
-
-.hero-section h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
+  padding: 0px;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hero-section h1 span {
   color: #ffc107;
-}
-
-.hero-section p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
 }
 
 .hero-section .btn-primary {
@@ -106,14 +109,11 @@
   background-color: #0056b3;
 }
 
-.hero-section img {
-  max-width: 100%;
-  height: auto;
-}
-
 .hero-image {
-  /* border-radius: 50%; */
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: center;
+  transform: scale(1.5);
+  clip-path: inset(20% 20%);
 }
