@@ -1,6 +1,8 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from "styled-components";
+import { IoIosDownload } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Experience() {
   const StyledText = styled.div`
@@ -85,6 +87,40 @@ function Experience() {
               </Col>
             </Row>
           </Col>
+        </Row>
+        <Row style={{ margin: "120px" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {" "}
+            <Link
+              to="https://drive.google.com/file/d/1AbGP42owg3i0TOujv0HtAu92Ax0l9mAc/view?usp=sharingf"
+              style={{ textDecoration: "none" }}
+            >
+              <Button
+                className="primary"
+                style={{
+                  textAlign: "center",
+                  color: "#ffffff",
+                  fontWeight: "500",
+                  fontSize: "24px",
+                  padding: "10px 14px",
+                  border: "1px solid #ffffff",
+                  backgroundColor: "transparent",
+                }}
+              >
+                Download My Resume{" "}
+                <span className="text-warning" style={{ marginLeft: "10px" }}>
+                  {" "}
+                  <IoIosDownload />
+                </span>
+              </Button>
+            </Link>
+          </div>
         </Row>
       </Container>
     </>
