@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 const StyledText = styled.div`
   p {
-    font-size: 22px; /* Adjust the font size as needed */
-    margin-bottom: 15px; /* Adjust the margin as needed */
+    font-size: 22px;
+    margin-bottom: 15px;
 
     font-weight: 200;
     color: #cacaca;
@@ -28,7 +28,7 @@ const MyComponent = () => {
       <Row>
         <Col md={3}>
           <StyledText>
-            <h1 className="text-warning">Background</h1>
+            <h1 className="text-warning my-2">Background</h1>
           </StyledText>
         </Col>
         <Col md={9}>

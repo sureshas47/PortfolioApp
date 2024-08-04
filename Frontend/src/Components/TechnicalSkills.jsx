@@ -37,7 +37,7 @@ function TechnicalSkills() {
       <Row>
         <Col md={3}>
           <StyledText>
-            <h1 className="text-warning">Technical Skills</h1>
+            <h1 className="text-warning my-2">Technical Skills</h1>
           </StyledText>
         </Col>
         <Col md={9}>

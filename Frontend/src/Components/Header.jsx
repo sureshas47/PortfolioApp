@@ -2,6 +2,14 @@ import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 function Header() {
+  const handleScroll = (event, sectionId) => {
+    event.preventDefault();
+    document.getElementById(sectionId).scrollIntoView({
+      behavior: "smooth", // Smooth scroll effect
+      block: "start", // Scroll to the start of the element
+    });
+  };
+
   return (
     <>
       {" "}
@@ -18,17 +26,35 @@ function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Container>
               <Nav className="ml-auto">
-                <Nav.Link className="active text-white" href="#home">
+                <Nav.Link className="active text-white" href="/">
                   Home
                 </Nav.Link>
-                <Nav.Link className=" text-white" href="#projects">
+                <Nav.Link
+                  className=" text-white"
+                  onClick={(e) => handleScroll(e, "background")}
+                >
+                  Background
+                </Nav.Link>
+                <Nav.Link
+                  className=" text-white"
+                  onClick={(e) => handleScroll(e, "technical-skills")}
+                >
+                  Skills
+                </Nav.Link>
+                <Nav.Link
+                  className=" text-white"
+                  onClick={(e) => handleScroll(e, "experience")}
+                >
+                  Experience
+                </Nav.Link>
+                <Nav.Link
+                  className=" text-white"
+                  onClick={(e) => handleScroll(e, "featured-projects")}
+                >
                   Projects
                 </Nav.Link>
-                <Nav.Link className=" text-white" href="#about">
-                  About
-                </Nav.Link>
-                <Nav.Link className=" text-white" href="#contact">
-                  Contact
+                <Nav.Link className=" text-white" href="/blog">
+                  Blog
                 </Nav.Link>
               </Nav>
             </Container>
