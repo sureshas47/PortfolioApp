@@ -9,7 +9,6 @@ const StyledText = styled.div`
 
     font-weight: 200;
     color: #cacaca;
-    padding: 0 50px;
   }
   h1 {
     font-size: 26px;

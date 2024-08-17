@@ -42,6 +42,9 @@
 } */
 
 body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #171d29;
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
@@ -57,7 +60,7 @@ body {
 .footer {
   background-color: #171d29;
   color: white;
-  padding: 40px 0;
+  /* padding: 40px 0; */
 }
 .footer a {
   color: #adb5bd;
@@ -114,6 +117,5 @@ body {
   width: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.5);
   clip-path: inset(20% 20%);
 }

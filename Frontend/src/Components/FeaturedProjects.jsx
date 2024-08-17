@@ -20,7 +20,6 @@ function FeaturedProjects() {
       margin-bottom: 15px; /* Adjust the margin as needed */
       font-weight: 200;
       color: #cacaca;
-      padding: 0 50px;
     }
     h1 {
       font-size: 26px;
@@ -73,14 +72,12 @@ function FeaturedProjects() {
                       justify
                       style={{
                         border: "none",
-                        padding: "0 50px",
                       }}
                     >
                       <Tab
                         eventKey="image"
                         title="Image"
                         style={{
-                          padding: "0 50px",
                           marginTop: "20px",
                         }}
                       >
@@ -88,7 +85,7 @@ function FeaturedProjects() {
                           src={featuredWork.image}
                           style={{
                             width: "100%",
-                            height: "600px",
+                            height: "100%",
                             border: "2px solid #ffc107",
                             borderRadius: "10px",
                             objectFit: "fill",
@@ -101,35 +98,26 @@ function FeaturedProjects() {
                               {featuredWork.name}
                             </p>
 
-                            <Row style={{ width: "400px" }}>
-                              {featuredWork.technologiesUsed.map((stack) => {
-                                return (
-                                  <>
-                                    <Col
-                                      style={{
-                                        display: "flex",
-                                        justifyContent: "left",
-                                        alignItems: "center",
-                                      }}
-                                    >
-                                      <span
-                                        style={{
-                                          padding: "6px 10px",
-                                          border: "1px solid #ffc107",
-                                          borderRadius: "10px",
-                                          color: "#fffff",
-                                          fontWeight: "400",
-                                        }}
-                                      >
-                                        {stack}
-                                      </span>
-                                    </Col>
-                                  </>
-                                );
-                              })}
-                            </Row>
+                            {featuredWork.technologiesUsed.map((stack) => {
+                              return (
+                                <>
+                                  <span
+                                    className="me-2"
+                                    style={{
+                                      padding: "6px 10px",
+                                      border: "1px solid #ffc107",
+                                      borderRadius: "10px",
+                                      color: "#fffff",
+                                      fontWeight: "400",
+                                    }}
+                                  >
+                                    {stack}
+                                  </span>
+                                </>
+                              );
+                            })}
                           </CardPara>
-                        </Row>
+                        </Row>{" "}
                         <Row className="mt-4">
                           <CardPara>
                             <p>{featuredWork.desc}</p>
@@ -140,14 +128,14 @@ function FeaturedProjects() {
                       <Tab
                         eventKey="video"
                         title="Video"
-                        style={{ padding: "0 50px", marginTop: "20px" }}
+                        style={{ marginTop: "20px" }}
                       >
                         <video
                           src={featuredWork.video}
                           controls
                           style={{
                             width: "100%",
-                            height: "600px",
+                            height: "100%",
                             border: "2px solid #ffc107",
                             borderRadius: "10px",
                           }}
@@ -158,7 +146,7 @@ function FeaturedProjects() {
                               {featuredWork.name}
                             </p>
 
-                            <Row style={{ width: "400px", maxWidth: "100%" }}>
+                            <Row>
                               {featuredWork.technologiesUsed.map((stack) => {
                                 return (
                                   <>

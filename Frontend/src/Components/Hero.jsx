@@ -20,12 +20,9 @@ const Hero = () => {
     }
 
     p {
-      font-size: 36px;
       margin-bottom: 30px;
     }
-    .text-warning {
-      font-size: 24px;
-    }
+
     .emoji {
       display: inline-block;
       animation: ${tiltAnimation} 1s ease-in-out;
@@ -47,19 +44,19 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <Container>
-        <Row className="align-items-center gx-5">
+        <Row className="align-items-center">
           <Col lg={6} md={12}>
             <StyledText>
               <p className="fs-1">
                 Hi! <strong ref={emojiRef}>👋</strong>
               </p>
-              <p>
+              <p className="fs-3">
                 I'm <span>Suresh Adhikari</span>, a Full Stack Web Developer
-                with specialized expertise in the MERN stack, adept at building
-                robust and scalable web applications.
+                expertise in the MERN stack, adept at building robust and
+                scalable web applications.
               </p>
 
-              <p className="text-warning text-underline">
+              <p className="text-warning text-underline fs-4">
                 Get in touch <FaArrowRight style={{ marginLeft: "8px" }} />{" "}
                 <span className="mx-2">
                   <Link
@@ -84,7 +81,10 @@ const Hero = () => {
             <Image
               src="https://i.ibb.co/tMG3y1P/3d-rendering-computer-desk.png"
               alt="Hero Image"
-              className="hero-image img-fluid"
+              className="hero-image"
+              width={"100%"}
+              height={"100%"}
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
           </Col>
         </Row>

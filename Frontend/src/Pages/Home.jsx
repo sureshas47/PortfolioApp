@@ -11,29 +11,29 @@ const StyledComponent = styled.div`
   margin: 150px 0;
 `;
 
-const ScrollToTopButton = styled.div`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ffc107; /* Background color */
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-size: 24px;
-  transition: background-color 0.3s;
-  z-index: 1000;
+// const ScrollToTopButton = styled.div`
+//   position: fixed;
+//   bottom: 20px;
+//   right: 30px;
+//   background-color: #ffc107; /* Background color */
+//   color: white;
+//   border: none;
+//   border-radius: 50%;
+//   width: 50px;
+//   height: 50px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   cursor: pointer;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//   font-size: 24px;
+//   transition: background-color 0.3s;
+//   z-index: 1000;
 
-  &:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-`;
+//   &:hover {
+//     background-color: #0056b3; /* Darker shade on hover */
+//   }
+// `;
 
 function Home() {
   const handleScrollToTop = (event) => {
@@ -63,9 +63,9 @@ function Home() {
       <section id="featured-projects">
         <FeaturedProjects />
       </section>
-      <ScrollToTopButton onClick={handleScrollToTop}>
+      {/* <ScrollToTopButton onClick={handleScrollToTop}>
         <FaChevronCircleUp size={30} />
-      </ScrollToTopButton>
+      </ScrollToTopButton> */}
     </>
   );
 }

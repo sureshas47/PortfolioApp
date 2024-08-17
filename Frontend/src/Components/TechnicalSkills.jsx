@@ -11,7 +11,6 @@ const StyledText = styled.div`
     font-weight: 200;
   }
   p {
-    padding: 0 50px;
     font-size: 22px;
   }
 
@@ -54,8 +53,8 @@ function TechnicalSkills() {
             </p>
           </StyledText>
 
-          <Row style={{ padding: "0 50px" }}>
-            <Col>
+          <Row className="gy-4">
+            <Col xs={6} md={3} lg={2}>
               <h5>Languages</h5>
               <StyledText>
                 <ul>
@@ -68,7 +67,7 @@ function TechnicalSkills() {
                 </ul>
               </StyledText>
             </Col>
-            <Col>
+            <Col xs={6} md={3} lg={2}>
               <h5>Frameworks</h5>
               <StyledText>
                 <ul>
@@ -81,7 +80,7 @@ function TechnicalSkills() {
                 </ul>
               </StyledText>
             </Col>
-            <Col>
+            <Col xs={6} md={3} lg={2}>
               <h5>APIs</h5>
               <StyledText>
                 <ul>
@@ -90,6 +89,8 @@ function TechnicalSkills() {
                   <li>Web Socket</li>
                 </ul>
               </StyledText>
+            </Col>
+            <Col xs={6} md={3} lg={2}>
               <h5>Databases</h5>
               <StyledText>
                 <ul>
@@ -101,7 +102,7 @@ function TechnicalSkills() {
                 </ul>
               </StyledText>
             </Col>
-            <Col>
+            <Col xs={6} md={3} lg={2}>
               <h5>Tools</h5>
               <StyledText>
                 <ul>

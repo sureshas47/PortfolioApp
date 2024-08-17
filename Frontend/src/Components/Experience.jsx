@@ -12,7 +12,6 @@ function Experience() {
 
       font-weight: 200;
       color: #cacaca;
-      padding: 0 50px;
     }
     h1 {
       font-size: 26px;
@@ -38,7 +37,7 @@ function Experience() {
               </p>
             </StyledText>
 
-            <Row style={{ padding: "0 50px" }}>
+            <Row>
               <Col md={8}>
                 <StyledText>
                   <h5>Devsign Technologies</h5>
@@ -62,7 +61,7 @@ function Experience() {
                 </StyledText>
               </Col>
             </Row>
-            <Row style={{ padding: "0 50px", marginTop: "20px" }}>
+            <Row style={{ marginTop: "20px" }}>
               <Col md={8}>
                 <StyledText>
                   <h5>PrismaSoft</h5>
@@ -107,8 +106,8 @@ function Experience() {
                   textAlign: "center",
                   color: "#ffffff",
                   fontWeight: "500",
-                  fontSize: "24px",
-                  padding: "10px 14px",
+                  fontSize: "18px",
+                  padding: "8px 10px",
                   border: "1px solid #ffffff",
                   backgroundColor: "transparent",
                 }}
