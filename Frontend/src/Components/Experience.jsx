@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 function Experience() {
   const StyledText = styled.div`
     p {
-      font-size: 22px; /* Adjust the font size as needed */
-      margin-bottom: 15px; /* Adjust the margin as needed */
+      font-size: 22px;
+      margin-bottom: 15px;
 
       font-weight: 200;
       color: #cacaca;
@@ -85,41 +85,37 @@ function Experience() {
                 </StyledText>
               </Col>
             </Row>
+            <Row style={{ margin: "120px 0px" }}>
+              <div>
+                <Link
+                  to="https://drive.google.com/file/d/1AbGP42owg3i0TOujv0HtAu92Ax0l9mAc/view?usp=sharingf"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Button
+                    size="lg"
+                    variant="primary"
+                    className="w-100"
+                    style={{
+                      color: "#ffffff",
+                      fontWeight: "500",
+                      border: "1px solid #ffc107",
+                      backgroundColor: "transparent",
+                      fontSize: "16px",
+                    }}
+                  >
+                    Download My Resume{" "}
+                    <span
+                      className="text-warning"
+                      style={{ marginLeft: "10px" }}
+                    >
+                      {" "}
+                      <IoIosDownload />
+                    </span>
+                  </Button>
+                </Link>
+              </div>
+            </Row>
           </Col>
-        </Row>
-        <Row style={{ margin: "120px" }}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            {" "}
-            <Link
-              to="https://drive.google.com/file/d/1AbGP42owg3i0TOujv0HtAu92Ax0l9mAc/view?usp=sharingf"
-              style={{ textDecoration: "none" }}
-            >
-              <Button
-                className="primary"
-                style={{
-                  textAlign: "center",
-                  color: "#ffffff",
-                  fontWeight: "500",
-                  fontSize: "18px",
-                  padding: "8px 10px",
-                  border: "1px solid #ffffff",
-                  backgroundColor: "transparent",
-                }}
-              >
-                Download My Resume{" "}
-                <span className="text-warning" style={{ marginLeft: "10px" }}>
-                  {" "}
-                  <IoIosDownload />
-                </span>
-              </Button>
-            </Link>
-          </div>
         </Row>
       </Container>
     </>
