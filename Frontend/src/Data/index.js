@@ -4,7 +4,7 @@ export const data = [
   {
     name: "Call Activity Management",
     desc: "A React application for displaying call activities with filtering and archiving capabilities.",
-    technologiesUsed: ["React", "Node.js", "Express.js", "MongoDB"],
+    technologiesUsed: ["React", "React - Boostrap"],
     image: aircall,
     video: aircallVideo,
     features: [

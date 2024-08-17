@@ -146,32 +146,24 @@ function FeaturedProjects() {
                               {featuredWork.name}
                             </p>
 
-                            <Row>
-                              {featuredWork.technologiesUsed.map((stack) => {
-                                return (
-                                  <>
-                                    <Col
-                                      style={{
-                                        display: "flex",
-                                        justifyContent: "space-evenly",
-                                      }}
-                                    >
-                                      <span
-                                        style={{
-                                          padding: "6px 10px",
-                                          border: "1px solid #ffc107",
-                                          borderRadius: "10px",
-                                          color: "#fffff",
-                                          fontWeight: "400",
-                                        }}
-                                      >
-                                        {stack}
-                                      </span>
-                                    </Col>
-                                  </>
-                                );
-                              })}
-                            </Row>
+                            {featuredWork.technologiesUsed.map((stack) => {
+                              return (
+                                <>
+                                  <span
+                                    className="me-2"
+                                    style={{
+                                      padding: "6px 10px",
+                                      border: "1px solid #ffc107",
+                                      borderRadius: "10px",
+                                      color: "#fffff",
+                                      fontWeight: "400",
+                                    }}
+                                  >
+                                    {stack}
+                                  </span>
+                                </>
+                              );
+                            })}
                           </CardPara>
                         </Row>
                         <Row className="mt-4">
